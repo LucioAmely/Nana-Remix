@@ -1,0 +1,15 @@
+---
+application:
+  name: "sally-nana"
+  project: "Sally"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "nanadb"
+  version: "12"
+routers:
+- name: "main-sally-nana"
+  routes:
+  - application_name: "sally-nana"
+    paths:
+    - "/*"
